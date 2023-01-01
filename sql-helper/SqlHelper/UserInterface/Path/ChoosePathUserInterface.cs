@@ -69,7 +69,7 @@ namespace SqlHelper.UserInterface.Path
                     .ToList()
                     .Prepend(d.Result.Start.Name)
                     .Select(table => table.PadRight(name_space))
-                    .Sentence(" -> ");
+                    .Sentence("    ");
 
                 _stream.Write(tables);
 
